@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ThrMinatoYT - Contrátame</title>
+    <title>THMinato - Contrátame</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -24,19 +24,30 @@
             <h2>Contrátame</h2>
             <p>¿Tienes un proyecto en mente? Llena el formulario y me pondré en contacto contigo.</p>
             <form action="https://formsubmit.co/theminatonamikase.yt@gmail.com" method="POST">
+                <!-- Campo para el correo electrónico -->
                 <label for="email">Tu correo electrónico:</label><br>
                 <input type="email" id="email" name="email" required><br><br>
 
-                <label for="mensaje">Mensaje o descripción del servicio:</label><br>
-                <textarea id="mensaje" name="mensaje" rows="5" required></textarea><br><br>
+                <!-- Campo para el nombre de Discord -->
+                <label for="discord">Tu nombre de Discord (Ejemplo: Usuario#1234):</label><br>
+                <input type="text" id="discord" name="discord" required><br><br>
 
+                <!-- Campo para el servicio que necesita -->
+                <label for="servicio">¿Qué servicio necesitas?</label><br>
+                <textarea id="servicio" name="servicio" rows="3" placeholder="Describe brevemente el servicio" required></textarea><br><br>
+
+                <!-- Campo para el presupuesto -->
+                <label for="presupuesto">¿Cuál es tu presupuesto aproximado?</label><br>
+                <input type="text" id="presupuesto" name="presupuesto" placeholder="Ejemplo: $50 USD" required><br><br>
+
+                <!-- Botón de envío -->
                 <button type="submit">Enviar</button>
             </form>
         </section>
     </main>
 
     <footer>
-        <p>© 2024 THMinato. Todos los derechos reservados.</p>
+        <p>© 2024 TheMinatoYT. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
