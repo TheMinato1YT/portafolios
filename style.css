@@ -1,0 +1,141 @@
+/* Estilos básicos */
+body {
+    font-family: "Courier New", Courier, monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e2e;
+    color: #e0e0ff;
+}
+
+a {
+    text-decoration: none;
+    color: #80b3ff;
+}
+
+a:hover {
+    color: #4d94ff;
+}
+
+/* Estilo del encabezado */
+header {
+    background-color: #2c2c54;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style: none;
+    margin: 10px 0 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite ajustar en dispositivos pequeños */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    font-size: 1.2em;
+}
+
+/* Secciones */
+.section {
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #2e2e4d;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Botón */
+button {
+    background-color: #4d94ff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #80b3ff;
+}
+
+/* Formulario */
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #4d94ff;
+    border-radius: 5px;
+    background-color: #1e1e2e;
+    color: #fff;
+}
+
+form input:focus, form textarea:focus {
+    outline: none;
+    border-color: #80b3ff;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #2c2c54;
+    color: #80b3ff;
+    padding: 10px 0;
+}
+
+/* --- Diseño Responsivo con Media Queries --- */
+/* Pantallas pequeñas (celulares) */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8em; /* Título más pequeño */
+    }
+
+    nav ul li a {
+        font-size: 1em; /* Menú más pequeño */
+    }
+
+    .section {
+        padding: 15px; /* Espaciado reducido */
+        margin: 20px;
+    }
+
+    form input, form textarea {
+        padding: 8px; /* Campos más pequeños */
+    }
+
+    button {
+        padding: 8px 16px; /* Botón más compacto */
+    }
+}
+
+/* Pantallas extra pequeñas (menos de 480px) */
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column; /* Navegación vertical */
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Espaciado entre enlaces */
+    }
+
+    .section {
+        margin: 10px;
+    }
+
+    button {
+        width: 100%; /* Botón ocupa toda la anchura */
+    }
+}
