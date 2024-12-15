@@ -20,33 +20,27 @@
     </header>
 
     <main>
-        <section class="section">
-            <h2>Servicios de Minecraft</h2>
-            <div class="service" onclick="selectService(this)">
+        <section class="service">
+            <div>
                 <h3>Configuración de Plugins</h3>
                 <p>Configuro plugins personalizados para mejorar la experiencia de tu servidor Minecraft.</p>
                 <p><strong>Precio:</strong> $50 USD</p>
             </div>
-            <div class="service" onclick="selectService(this)">
+            <img src="plugin_image.jpg" alt="Imagen de configuración de plugin">
+        </section>
+
+        <section class="service">
+            <div>
                 <h3>Traducción de Servidores</h3>
                 <p>Traducción de tu servidor Minecraft a varios idiomas.</p>
                 <p><strong>Precio:</strong> $40 USD</p>
             </div>
-            <!-- Puedes agregar más servicios de Minecraft aquí -->
+            <img src="translation_image.jpg" alt="Imagen de traducción de servidor">
         </section>
     </main>
 
     <footer>
         <p>© 2024 THMinato. Todos los derechos reservados.</p>
     </footer>
-
-    <script>
-        // Función para seleccionar un servicio y aplicar el estilo
-        function selectService(service) {
-            const services = document.querySelectorAll('.service');
-            services.forEach((s) => s.classList.remove('selected')); // Elimina la clase 'selected' de todos
-            service.classList.add('selected'); // Agrega la clase 'selected' al servicio clicado
-        }
-    </script>
 </body>
 </html>
